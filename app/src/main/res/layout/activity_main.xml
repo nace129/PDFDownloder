@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/dark_blue"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_launcher_foreground"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PDF Download Activity"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please provide list of five SJSU PDFs to download\n* Hardcode of files is fine! or you can provide full qualified names..."
+        android:textSize="14sp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:paddingBottom="10dp"/>
+
+    <EditText android:id="@+id/pdf1" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="PDF1 File Location" android:background="@android:color/white"/>
+    <EditText android:id="@+id/pdf2" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="PDF2 File Location" android:background="@android:color/white"/>
+    <EditText android:id="@+id/pdf3" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="PDF3 File Location" android:background="@android:color/white"/>
+    <EditText android:id="@+id/pdf4" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="PDF4 File Location" android:background="@android:color/white"/>
+    <EditText android:id="@+id/pdf5" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="PDF5 File Location" android:background="@android:color/white"/>
+
+    <Button android:id="@+id/btnDownload" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Start Download" android:background="@android:color/holo_orange_light" android:textColor="@android:color/black" android:layout_marginTop="20dp"/>
+</LinearLayout>
